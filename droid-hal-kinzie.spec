@@ -11,12 +11,10 @@
 # Entries migrated from the old rpm/droid-hal-hammerhead.spec
 %define enable_kernel_update 1
 
+%define droid_target_aarch64 1
+
 %define straggler_files \
-/init.mmi.boot.sh\
 /init.mmi.touch.sh\
-/init.qcom.ssr.sh\
-/selinux_version\
-/service_contexts\
 %{nil}
 
 #%define makefstab_skip_entries /sys/fs/cgroup/bfqio /sys/fs/pstore none
